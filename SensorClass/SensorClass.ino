@@ -12,12 +12,14 @@ void setup(){
     delay(1000);
     SerialCom->println("Setup....");
 
+    pinMode(A15, INPUT);
     
 }
 
 void loop(){
-    
+
+    ADCval = 2;
     ADCval = Sensor1.Calibration();
-    Serial.println(ADCval);
+    Serial.println(2);
     delayMicroseconds(1000);
 }

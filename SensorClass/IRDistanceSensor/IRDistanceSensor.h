@@ -8,16 +8,12 @@ class IRDistanceSensor{
         char type;
     public:
         //default conttuctor
-        IRDistanceSensor(){}
-
+        IRDistanceSensor()
         //paramteric constructor
-        IRDistanceSensor(int inputPin, char type){}
-
-        float measureDistance_DataSheet(){}
-
-        float measureDistance_Calibrated(){}
-
-        int Calibration(){}
+        IRDistanceSensor(int inputPin, char type);
+        float measureDistance_DataSheet();
+        float measureDistance_Calibrated();
+        int Calibration();
 };
 
 #endif
