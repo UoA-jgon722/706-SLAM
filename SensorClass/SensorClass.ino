@@ -10,7 +10,7 @@ void setup(){
     SerialCom->begin(9600);
     SerialCom->println("MECHENG706_Base_Code_25/01/2018");
     delay(1000);
-    SerialCom->println("Setup....");
+    SerialCom->println("Setu22p....");
 
     pinMode(A15, INPUT);
     
@@ -20,6 +20,6 @@ void loop(){
 
     ADCval = 2;
     ADCval = Sensor1.Calibration();
-    Serial.println(2);
+    SerialCom->println(int(2))
     delayMicroseconds(1000);
 }
