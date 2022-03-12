@@ -1,3 +1,4 @@
+
 int sensorPin = A2;           //define the pin that gyro is connected 
 int T = 100;                        // T is the time of one loop 
 int sensorValue = 0;           // read out value of sensor 
