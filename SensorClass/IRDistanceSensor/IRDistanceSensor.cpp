@@ -1,3 +1,4 @@
+//#include "IRDistanceSensor.h"
 
 //default conttuctor
 IRDistanceSensor::IRDistanceSensor(){}
@@ -25,10 +26,10 @@ float IRDistanceSensor::measureDistance_DataSheet(){
 }
 
 int IRDistanceSensor::Calibration(){
-    int signalADC_2 = 2;
-    //signalADC = analogRead(5);
+    int signalADC = 0;
+    signalADC = analogRead(inputPin);
     //signalADC = 5;
-    return 6;
+    return signalADC;
 }
 
 float IRDistanceSensor::measureDistance_Calibrated(){
